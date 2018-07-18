@@ -4,10 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
     android:orientation="vertical"
-    tools:context="com.example.asus.coba.cari">
-
+    tools:context="com.example.asus.coba.cari"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -62,7 +66,7 @@
             android:text="Keyword :" />
 
         <EditText
-            android:id="@+id/namaBuku"
+            android:id="@+id/input1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="masukan Keyword" />
@@ -74,13 +78,14 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="horizontal">
-
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CARI"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:onClick="cari"
+            android:background="#e48d32"/>
     </LinearLayout>
 
-
+    </LinearLayout>
 </LinearLayout>

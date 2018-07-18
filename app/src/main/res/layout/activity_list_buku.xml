@@ -4,61 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    android:background="@drawable/bg"
     android:orientation="vertical"
-    tools:context="com.example.asus.coba.ListBuku"
-    android:background="@drawable/bg">
+    tools:context="com.example.asus.coba.ListBuku">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:background="#ea9930">
-        <TextView
-            android:layout_marginLeft="20dp"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="PREVIEW" />
-        <View
-            android:layout_width="2dp"
-            android:layout_height="match_parent"
-            android:background="#b6b5b5"></View>
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
 
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:text="JUDUL BUKU" />
-    </LinearLayout>
+            android:layout_height="50dp"
+            android:background="#ea9930"
+            android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="PREVIEW" />
 
-        <RelativeLayout
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#b6b5b5"></View>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="JUDUL BUKU" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ListView
-                android:id="@+id/listBuku"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"></ListView>
-            <com.nightonke.boommenu.BoomMenuButton
-                android:id="@+id/bmb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                app:bmb_buttonEnum="textOutsideCircle"
-                app:bmb_piecePlaceEnum="piecePlace_dot_2_1"
-                app:bmb_buttonPlaceEnum="buttonPlace_sc_2_2"
-                />
-        </RelativeLayout>
-    </LinearLayout>
+                android:layout_height="match_parent">
 
+                <ListView
+                    android:id="@+id/listBuku"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ListView>
+
+                <com.nightonke.boommenu.BoomMenuButton
+                    android:id="@+id/bmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp"
+                    app:bmb_buttonEnum="textOutsideCircle"
+                    app:bmb_buttonPlaceEnum="buttonPlace_sc_2_2"
+                    app:bmb_piecePlaceEnum="piecePlace_dot_2_1" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

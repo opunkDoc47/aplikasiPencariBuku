@@ -44,6 +44,7 @@ public class ListBuku extends AppCompatActivity {
     }
 
     private void tampil(String tabel, String value) {
+        Toast.makeText(this, tabel+","+value, Toast.LENGTH_SHORT).show();
         arrayList = new ArrayList<>();
         Cursor cursor = dao.read(tabel, value);
         if (cursor.moveToFirst()) {
@@ -165,5 +166,11 @@ public class ListBuku extends AppCompatActivity {
                 builder.show();
             }
         });
+    }
+    @Override
+    public void onBackPressed(){
+        Intent intent=new Intent(ListBuku.this,menuUtama.class);
+        startActivity(intent);
+        finish();
     }
 }

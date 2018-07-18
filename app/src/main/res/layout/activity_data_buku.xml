@@ -4,10 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
     android:orientation="vertical"
     tools:context="com.example.asus.coba.DataBuku"
     android:background="@drawable/bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,7 +49,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="judul buku disini"
-                android:textSize="15dp" />
+                android:textSize="25dp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -67,9 +71,10 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="79dp"
+                android:textSize="15dp"
+                android:layout_width="86dp"
                 android:layout_height="wrap_content"
-                android:text="Judul buku" />
+                android:text="Judul Buku" />
 
             <TextView
                 android:layout_width="5dp"
@@ -77,6 +82,8 @@
                 android:text=":" />
 
             <TextView
+                android:layout_marginLeft="5dp"
+                android:textSize="15dp"
                 android:id="@+id/judulBuku"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -88,15 +95,18 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="79dp"
+                android:textSize="15dp"
+                android:layout_width="86dp"
                 android:layout_height="wrap_content"
-                android:text="penulis " />
+                android:text="Penulis " />
             <TextView
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:text=":" />
 
             <TextView
+                android:layout_marginLeft="5dp"
+                android:textSize="15dp"
                 android:id="@+id/penulis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -108,15 +118,18 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="79dp"
+                android:textSize="15dp"
+                android:layout_width="86dp"
                 android:layout_height="wrap_content"
-                android:text="penerbit " />
+                android:text="Penerbit " />
             <TextView
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:text=":" />
 
             <TextView
+                android:layout_marginLeft="5dp"
+                android:textSize="15dp"
                 android:id="@+id/penerbit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -128,15 +141,18 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="79dp"
+                android:textSize="15dp"
+                android:layout_width="86dp"
                 android:layout_height="wrap_content"
-                android:text="tahun terbit" />
+                android:text="Tahun Terbit" />
             <TextView
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:text=":" />
 
             <TextView
+                android:layout_marginLeft="5dp"
+                android:textSize="15dp"
                 android:id="@+id/tahuTerbit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -148,15 +164,18 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="79dp"
+                android:textSize="15dp"
+                android:layout_width="86dp"
                 android:layout_height="wrap_content"
-                android:text="lokasi buku" />
+                android:text="Lokasi Buku" />
             <TextView
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:text=":" />
 
             <TextView
+                android:layout_marginLeft="5dp"
+                android:textSize="15dp"
                 android:id="@+id/lokasiBuku"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -177,7 +196,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Deskripsi buku:" />
+            android:text="Deskripsi Buku:" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -189,5 +208,6 @@
                 android:layout_height="match_parent"
                 android:text="deskripsi disini" />
         </ScrollView>
+    </LinearLayout>
     </LinearLayout>
 </LinearLayout>
