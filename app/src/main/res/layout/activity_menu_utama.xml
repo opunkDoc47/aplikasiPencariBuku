@@ -47,17 +47,19 @@
 
         <com.varunest.sparkbutton.SparkButton
             android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="249dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="85dp"
+            android:layout_marginLeft="125dp"
             app:sparkbutton_activeImage="@drawable/koleksibukupasif"
             app:sparkbutton_iconSize="150dp"
             app:sparkbutton_inActiveImage="@drawable/koleksibukuaktif"
             app:sparkbutton_primaryColor="@color/primary_color"
             app:sparkbutton_secondaryColor="@color/secondary_color" />
+
 
     </RelativeLayout>
 </RelativeLayout>

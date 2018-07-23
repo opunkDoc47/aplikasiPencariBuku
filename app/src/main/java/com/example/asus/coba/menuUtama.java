@@ -11,13 +11,13 @@ import com.varunest.sparkbutton.SparkButton;
 import com.varunest.sparkbutton.SparkEventListener;
 
 public class menuUtama extends AppCompatActivity {
- SparkButton button1,button2;
+ SparkButton button1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_menu_utama);
-        button1=findViewById(R.id.button1);
+        button1=(SparkButton) findViewById(R.id.button1);
         button1.setChecked(false);
         button1.setEventListener(new SparkEventListener() {
             @Override
